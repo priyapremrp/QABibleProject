@@ -1,0 +1,27 @@
+<suite name="Suite for Crossbrowser testing" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="utilities.ExtentReportUtility" />
+	</listeners>
+	<test name="Chrome testing">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="testCasesPackage.ClientTestCase"></class>
+			<class name="testCasesPackage.CreateClientTestCase"></class>
+			<class name="testCasesPackage.CreateWorkerTestCase"></class>
+			<class name="testCasesPackage.DashboardTestCase"></class>
+			<class name="testCasesPackage.LoginTestCases"></class>
+			<class name="testCasesPackage.WorkerTestcase"></class>
+		</classes>
+	</test>
+	<test name="Edge testing">
+		<parameter name="browser" value="Edge"></parameter>
+		<classes>
+			<class name="testCasesPackage.ClientTestCase"></class>
+			<class name="testCasesPackage.CreateClientTestCase"></class>
+			<class name="testCasesPackage.CreateWorkerTestCase"></class>
+			<class name="testCasesPackage.DashboardTestCase"></class>
+			<class name="testCasesPackage.LoginTestCases"></class>
+			<class name="testCasesPackage.WorkerTestcase"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite for Crossbrowser testing]">
+  <listeners>
+    <listener class-name="utilities.ExtentReportUtility"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Edge testing(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testCasesPackage.ClientTestCase">
+        <methods>
+          <include name="verifytheTooltipValueOfEditIconInTheClientsPage"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCasesPackage.ClientTestCase -->
+      <class name="testCasesPackage.CreateClientTestCase">
+        <methods>
+          <include name="toCheckWhetherRequirePoCheckboxIsCheckedFromCreateClientSubPage"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCasesPackage.CreateClientTestCase -->
+    </classes>
+  </test> <!-- Edge testing(failed) -->
+  <test thread-count="2" parallel="tests" name="Chrome testing(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testCasesPackage.ClientTestCase">
+        <methods>
+          <include name="verifytheTooltipValueOfEditIconInTheClientsPage"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCasesPackage.ClientTestCase -->
+      <class name="testCasesPackage.CreateClientTestCase">
+        <methods>
+          <include name="toCheckWhetherRequirePoCheckboxIsCheckedFromCreateClientSubPage"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCasesPackage.CreateClientTestCase -->
+    </classes>
+  </test> <!-- Chrome testing(failed) -->
+</suite> <!-- Failed suite [Suite for Crossbrowser testing] -->

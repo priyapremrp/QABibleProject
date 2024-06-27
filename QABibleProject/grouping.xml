@@ -1,0 +1,26 @@
+<suite name = "Grouping Suite">
+	<test name = "Grouping Test">
+		<groups>
+			<run>
+				<include name = "Critical">
+					
+				</include>
+				
+				<include name = "High">
+					
+				</include>
+				
+			</run>
+		</groups>
+			<classes>
+				
+				<class name = "testCasesPackage.ClientTestCase"></class>
+				<class name = "testCasesPackage.CreateClientTestCase"></class>
+				<class name = "testCasesPackage.CreateWorkerTestCase"></class>
+				<class name = "testCasesPackage.DashboardTestCase"></class>
+				<class name = "testCasesPackage.LoginTestCases"></class>
+				<class name = "testCasesPackage.WorkerTestcase"></class>
+						
+			</classes>
+	</test>
+</suite>
